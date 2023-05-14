@@ -1,142 +1,167 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đoàn trường LTV và những chuyện chưa kể</title>
-    <shortcut icon="#" />
-    <!-- <link href="../dist/output.css" rel="stylesheet" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="loaderelement">
-      <span class="spinner"></span>
-    </div>
-    <div class="pt-6 sm:pt-5">
-      <h1
-        class="text-center text-black text-2xl sm:text-4xl font-semibold mb-2 sm:mb-3"
-      >
-        Đoàn trường Lương Thế Vinh
-      </h1>
-      <h2
-        class="text-center font-normal text-lg sm:text-xl text-gray-500 mb-6 sm:mb-8"
-      >
-        Những câu chuyện chưa kể
-      </h2>
-    </div>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-3 gap-x-4 sm:gap-x-8 max-w-full mx-auto pl-6 pr-6"
-    >
-      <div class="flex max-w-lg mx-auto">
-        <div
-          class="bg-white shadow-md border border-gray-200 rounded-lg max-w-xs mb-5 pt-2 items-center transform transition duration-300 hover:scale-110"
-        >
-          <a href="#">
-            <img
-              class="rounded-t-lg object-cover p-1"
-              src="https://source.unsplash.com/random/920x613/?landscape"
-              alt=""
-            />
-          </a>
-          <div class="p-2">
-            <a href="./blogs/1001.html">
-              <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-3">
-                Đoàn trường và 1001 cách xử lý khi có drama
-              </h5>
-            </a>
-            <p class="font-normal text-gray-700 mb-3 break-normal">
-              Sự việc xảy ra vào tối ngày 1/3/2022, chúng mình mong nhận được
-              câu trả lời từ phía đại diện Đoàn trường...
-            </p>
-            <a
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center justify-end"
-              href="./blogs/1001.html"
-            >
-              Hít thêm
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="flex max-w-lg mx-auto">
-        <div
-          class="bg-white shadow-md border border-gray-200 rounded-lg max-w-xs mb-5 pt-2 items-center transform transition duration-300 hover:scale-110"
-        >
-          <a href="#">
-            <img
-              class="rounded-t-lg object-cover p-1"
-              src="https://source.unsplash.com/random/920x613/?forest"
-              alt=""
-            />
-          </a>
-          <div class="p-2">
-            <a href="./blogs/GCDV-2.html">
-              <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-3">
-                Giải cứu Diễm Vương (P2)
-              </h5>
-            </a>
-            <p class="font-normal text-gray-700 mb-3 break-normal">
-              Ngày 2/3/2022, tướng lĩnh Mỏi Mệt đã quay trở lại chiến tuyến, bày
-              tỏ mong muốn nhận được câu trả lời từ phía Đoàn Đệ thay cho sự im
-              lặng cho xong chuyện...
-            </p>
-            <a
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center justify-end"
-              href="./blogs/GCDV-2.html"
-            >
-              Hít thêm
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="flex max-w-lg mx-auto">
-        <div
-          class="bg-white shadow-md border border-gray-200 rounded-lg max-w-xs mb-5 pt-2 items-center transform transition duration-300 hover:scale-110"
-        >
-          <a href="#">
-            <img
-              class="rounded-t-lg object-cover p-1"
-              src="https://source.unsplash.com/random/920x613/?flowers"
-              alt=""
-            />
-          </a>
-          <div class="p-2">
-            <a href="./blogs/GCDV-1.html">
-              <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-3">
-                Giải cứu Diễm Vương (P1)
-              </h5>
-            </a>
-            <p class="font-normal text-gray-700 mb-3 break-normal">
-              Vào những ngày đầu sau khi đi học lại, Đoàn trường tiến hành công
-              tác kiểm tra. Họ càn quét khắp nơi trong trường, soi từng mọi ngóc
-              ngách trong lớp...
-            </p>
-            <a
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center justify-end"
-              href="./blogs/GCDV-1.html"
-            >
-              Hít thêm
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- component -->
-    <script>
-      let loaderel = document.querySelector(".loaderelement");
 
-      window.addEventListener("load", function() {
-        loaderel.style.display = "none";
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đoàn trường LTV và những chuyện chưa kể</title>
+  <shortcut icon="#" />
+  <!-- <link href="../dist/output.css" rel="stylesheet" /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./assets/global.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="spinner"
+    class="absolute z-10 flex items-center justify-center w-full min-h-screen m-auto overflow-hidden bg-opacity-25 bg-tranparent">
+    <div id="loader" class="relative grid grid-cols-3 gap-0.5 w-24 h-24">
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+    </div>
+  </div>
+  <div class="bg-gray-100 dark:bg-gray-900 min-h-screen w-full overflow-hidden">
+    <div class="flex items-center flex-col">
+      <div class="pt-4 fixed top-0 z-30 w-full h-24 bg-gray-100 dark:bg-gray-900">
+        <h1 class="text-center text-gray-900 dark:text-white text-2xl sm:text-4xl font-semibold mb-1 sm:mb-2">
+          Đoàn trường Lương Thế Vinh
+        </h1>
+        <h2 class="text-center font-normal text-lg sm:text-xl text-gray-500 dark:text-white/50">
+          Những câu chuyện chưa kể
+        </h2>
+      </div>
+      <div id="content"
+        class="hidden mt-28 grid grid-cols-1 sm:grid-cols-3 gap-x-4 sm:gap-x-8 max-w-full mx-auto pl-6 pr-6">
+
+        <div class="blog h-4/5 flex max-w-lg mx-auto cursor-pointer">
+          <a href="./blogs/1001.html">
+            <div
+              class="bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-800/20 rounded-lg max-w-xs mb-5 pt-2 items-center transform transition duration-300 hover:scale-105">
+              <div class="flex justify-center h-1/2">
+                <div class="w-full px-2">
+                  <img src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-3-800x800.jpg"
+                    class="rounded w-full h-full align-middle border-none object-cover" />
+                </div>
+              </div>
+              <div class="flex flex-col grow gap-1 h-full mt-2">
+                <div class="px-2 flex grow flex-col">
+                  <div class="h-10">
+                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight dark:text-white line-clamp-1">
+                      Đoàn trường và 1001 cách xử lý khi có drama
+                    </h5>
+                  </div>
+                  <div class="h-20 flex items-start">
+                    <p class="font-normal text-gray-700 break-normal dark:text-gray-200 line-clamp-3">
+                      Sự việc xảy ra vào tối ngày 1/3/2022, chúng mình mong nhận được
+                      câu trả lời từ phía đại diện Đoàn trường...
+                    </p>
+                  </div>
+                </div>
+                <div class="p-2 flex justify-start items-center">
+                  <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center justify-end"
+                    href="./blogs/1001.html">
+                    Hít thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="blog h-4/5 flex max-w-lg mx-auto cursor-pointer">
+          <a href="./blogs/GCDV-1.html">
+            <div
+              class="bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-800/20 rounded-lg max-w-xs mb-5 pt-2 items-center transform transition duration-300 hover:scale-105">
+              <div class="flex justify-center h-1/2">
+                <div class="w-full px-2">
+                  <img src="https://source.unsplash.com/random/800x800/?city-lights"
+                    class="rounded w-full h-full align-middle border-none object-cover" />
+                </div>
+              </div>
+              <div class="flex flex-col grow gap-1 h-full mt-2">
+                <div class="px-2 flex grow flex-col">
+                  <div class="h-10">
+                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight dark:text-white line-clamp-1">
+                      Giải cứu Diễm Vương (P1)
+                    </h5>
+                  </div>
+                  <div class="h-20 flex items-start">
+                    <p class="font-normal text-gray-700 break-normal dark:text-gray-200 line-clamp-3">
+                      Vào những ngày đầu sau khi đi học lại, Đoàn trường tiến hành công
+                      tác kiểm tra. Họ càn quét khắp nơi trong trường, soi từng mọi ngóc
+                      ngách trong lớp...
+                    </p>
+                  </div>
+                </div>
+                <div class="p-2 flex justify-start items-center">
+                  <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center justify-end"
+                    href="./blogs/GCDV-1.html">
+                    Hít thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="blog h-4/5 flex max-w-lg mx-auto cursor-pointer">
+          <a href="./blogs/GCDV-2.html">
+            <div
+              class="bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-800/20 rounded-lg max-w-xs mb-5 pt-2 items-center transform transition duration-300 hover:scale-105">
+              <div class="flex justify-center h-1/2">
+                <div class="w-full px-2">
+                  <img src="https://source.unsplash.com/random/800x800/?neon-city"
+                    class="rounded w-full h-full align-middle border-none object-cover" />
+                </div>
+              </div>
+
+              <div class="flex flex-col grow gap-1 h-full mt-2">
+                <div class="px-2 flex grow flex-col">
+                  <div class="h-10">
+                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight dark:text-white">
+                      Giải cứu Diễm Vương (P2)
+                    </h5>
+                  </div>
+                  <div class="h-20 flex items-start">
+                    <p class="font-normal text-gray-700 break-normal dark:text-gray-200 line-clamp-3">
+                      Ngày 2/3/2022, tướng lĩnh Mỏi Mệt đã quay trở lại chiến tuyến, bày
+                      tỏ mong muốn nhận được câu trả lời từ phía Đoàn Đệ thay cho sự im
+                      lặng cho xong chuyện...
+                    </p>
+                  </div>
+                </div>
+                <div class="p-2 flex justify-start items-center">
+                  <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center justify-end"
+                    href="./blogs/GCDV-2.html">
+                    Hít thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let spinner = document.getElementById('spinner')
+    let content = document.getElementById('content')
+    setTimeout(() => {
+      spinner.classList.add('hidden')
+      content.classList.remove('hidden')
+    }, 2500)
+  </script>
+</body>
+
 </html>
