@@ -1,125 +1,186 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giải cứu Diễm Vương (P2)</title>
-    <shortcut icon="#" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-slate-50">
-    <!-- component -->
-    <div class="flex max-w-3xl mx-auto items-center mb-16 pt-5">
-      <div class="bg-white shadow-2xl rounded-lg mb-6 tracking-wide">
-        <div class="md:flex-shrink-0">
-          <img
-            src="https://source.unsplash.com/random/600x250/?landscape"
-            alt="cover"
-            class="w-full h-32 sm:h-64 rounded-lg rounded-b-none object-cover"
-          />
-        </div>
-        <div class="px-4 py-2 mt-2">
-          <h2
-            class="text-black text-2xl sm:text-4xl font-semibold text-center mb-3"
-          >
-            Giải cứu Diễm Vương (P2)
-          </h2>
-          <p
-            class="mt-2 text-gray-700 px-4 indent-6 sm:indent-8 italic font-normal text-base lg:text-lg"
-          >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giải cứu Diễm Vương (P2)</title>
+  <shortcut icon="#" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="../assets/global.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-slate-50 dark:bg-gray-900">
+
+  <div id="spinner"
+    class="absolute z-10 flex items-center justify-center w-full min-h-screen m-auto overflow-hidden bg-opacity-25 bg-tranparent">
+    <div id="loader" class="relative grid grid-cols-3 gap-0.5 w-24 h-24">
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+    </div>
+  </div>
+
+  <div id="content" class="hidden">
+    <main class="pt-4 pb-12 bg-white dark:bg-gray-900">
+      <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+        <article
+          class="mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+          <header class="mb-4 lg:mb-6 not-format">
+            <h1
+              class="mb-3 text-xl md:text-2xl font-bold leading-tight text-gray-900 lg:mb-6 lg:text-3xl dark:text-white">
+              Giải cứu Diễm Vương (P2)
+            </h1>
+            <address class="flex items-center mb-6 not-italic">
+              <div class="flex items-center flex-row w-full gap-x-4 max-w-lg">
+                <a href="#" rel="author" class="text-md font-semibold text-gray-900 dark:text-white">
+                  <span class="text-gray-600 dark:text-white/50">Tác giả: </span>
+                  Ét O Ét
+                </a>
+                <p class="text-base font-base text-gray-500 dark:text-gray-400">
+                  2/3/2022
+                </p>
+              </div>
+            </address>
+          </header>
+          <p class="lead italic mt-2 indent-4 text-gray-500 dark:text-gray-200/70">
             "Được biết, Minh Dương đã kêu gọi viện trợ bất hợp pháp từ phía SITO
             để đưa chính bản thân trở thành cường quốc môn sinh lớn thứ 2
             trường. Dù được đề cử giải Nobel
             <span class="italic">“3 tốt”</span> của tỉnh, Minh Dương vẫn bị
             nhiều người chỉ trích vì hành vi ứng xử của mình. Phong trào sau này
             còn biết đến với tên gọi
-            <span class="italic">“Giải cứu Diễm Dương”</span>."
+            <span class="italic">“Giải cứu Diễm Dương”</span> ..."
           </p>
-          <p class="pt-6 text-black px-4 indent-4 sm:indent-6 lg:text-lg">
-            - Ngày 2/3/2022, tướng lĩnh Mỏi Mệt đã quay trở lại chiến tuyến, bày
-            tỏ mong muốn nhận được câu trả lời từ phía Đoàn Đệ thay cho sự im
-            lặng cho xong chuyện.
+          <p class="lead mt-4 indent-4 text-gray-900 dark:text-white">
+            Ngày 2/3/2022, tướng lĩnh <span class="font-semibold">Mỏi Mệt </span> đã quay trở lại chiến tuyến,
+            bày tỏ mong muốn nhận được câu trả lời từ phía Đoàn Đệ thay cho sự im lặng cho xong chuyện.
           </p>
-          <p class="pt-2 text-black px-4 indent-4 sm:indent-6 lg:text-lg">
-            - Theo Mỏi Mệt, đây không phải là lần đầu tiên nhân dân LTV ta bất
+          <p class="lead mt-2 indent-4 text-gray-900 dark:text-white">
+            Theo <span class="font-semibold">Mỏi Mệt </span>, đây không phải là lần đầu tiên nhân dân LTV ta bất
             bình về cách làm việc của Đoàn Đệ. Từ việc gửi cfs phản ánh lên
-            <span class="italic">"LTV - Thay lời muốn nói”</span> nhưng đều
-            không được duyệt, hay có chăng đăng lên rồi lại thu hồi ngay sau đó.
+            "LTV - Thay lời muốn nói” nhưng đều không được duyệt,
+            hay có chăng đăng lên rồi lại thu hồi ngay sau đó.
             Nhưng bản <span class="italic">“Đoàn trường đại cáo”</span> đã cho
             thấy sự bất mãn của thần dân LTV với
             <span class="italic">“quân triều đình”</span> đã đạt đến đỉnh điểm.
           </p>
-          <p class="text-black px-4 indent-2 sm:indent-4 lg:text-lg">
+          <p class="lead mt-2 indent-4 text-gray-900 dark:text-white">
             Và việc thông qua bản đại cáo này cũng cho thấy sự dũng cảm của các
             nhà hoạt động tại địa điểm
             <span class="italic">“LTV - Thay lời muốn nói”</span> vì đã dám đứng
             lên cùng nhân dân kháng chiến.
           </p>
-          <p
-            class="pt-4 text-black px-4 indent-4 sm:indent-6 max-w-2xl text-center lg:text-lg"
-          >
-            <span class="italic font-medium">
-              “Chúng mình bất bình, chúng mình có quyền lên tiếng. Và tất nhiên
-              chúng mình ở đây không phải là cá nhân mà là một tập thể rất nhiều
-              người.”
-            </span>
+          <p class="lead mt-2 indent-6 font-medium sm:font-semibold text-gray-900 dark:text-white">
+            "Chúng mình bất bình, chúng mình có quyền lên tiếng. Và tất nhiên
+            chúng mình ở đây không phải là cá nhân mà là một tập thể rất nhiều
+            người."
           </p>
-          <p
-            class="pt-2 text-black pl-4 pr-12 indent-4 sm:indent-6 text-center lg:text-lg"
-          >
-            <span class="italic font-medium">
-              “HÃY ĐỐI MẶT VỚI SỰ VIỆC VÀ LÊN TIẾNG ĐI, ĐỪNG TRỐN TRÁNH CHỈ LÀM
-              CHO MỌI VIỆC TỒI TỆ HƠN THÔI. HÃY HÀNH ĐỘNG SAO CHO XỨNG VỚI CHỨC
-              DANH CỦA MÌNH.”
-            </span>
+          <p class="italic mt-3 indent-6 font-medium text-gray-900 dark:text-white sm:font-semibold lg:text-lg">
+            "HÃY ĐỐI MẶT VỚI SỰ VIỆC VÀ LÊN TIẾNG ĐI, ĐỪNG TRỐN TRÁNH CHỈ LÀM
+            CHO MỌI VIỆC TỒI TỆ HƠN THÔI. HÃY HÀNH ĐỘNG SAO CHO XỨNG VỚI CHỨC
+            DANH CỦA MÌNH."
           </p>
-          <p class="pt-4 text-black px-4 indent-4 sm:indent-6 lg:text-lg">
-            - Và đứng trước những tư tưởng trốn tránh của Đoàn Đệ như ém bài,
-            che giấu bài và âm thầm báo cáo, xóa bình luận thì Mỏi Mệt đã dõng
-            dạc tuyên bố rằng:
+          <p class="lead mt-2 indent-4 text-gray-900 dark:text-white">
+            Và đứng trước những tư tưởng trốn tránh của Đoàn Đệ như ém bài,
+            che giấu bài và âm thầm báo cáo, xóa bình luận thì <span class="font-semibold">Mỏi Mệt </span>
+            đã dõng dạc tuyên bố rằng:
             <span class="italic">
               “Mình đã tổng hợp lên trên file, một khi bài post bị xoá hay một
               cmt nào bị mất đi thì mình vẫn còn giữ”
             </span>
           </p>
-          <p class="pt-2 text-black px-4 indent-4 sm:indent-6 lg:text-lg">
-            - Hơn nữa, phong trào
+
+          <p class="lead mt-2 indent-4 text-gray-900 dark:text-white">
+            Hơn nữa, phong trào
             <span class="italic">“Giải cứu Diễm Vương”</span> nhận được rất
             nhiều sự ủng hộ từ quần chúng nhân dân LTV và ở các địa phương khác.
           </p>
-          <p class="pt-12 text-black px-4 indent-4 sm:indent-6 lg:text-lg">
+          <p class="lead mt-2 indent-4 text-gray-900 dark:text-white">
             Thử hỏi rằng đã có bao nhiêu người đã tham gia phong trào? Bao nhiêu
-            người đã tiếp lửa bằng cách
-            <span class="italic">“Cap màn hình”</span> để phong trào này có thể
-            cháy mãi? Vì vậy, việc im lặng lúc này từ phe Đoàn Đệ chỉ khiến sự
-            tín nhiệm từ nhân dân với Đoàn Đệ trường càng ngày càng giảm sút.
+            người đã tiếp lửa bằng cách <span class="italic">“Cap màn hình”</span>
+            để phong trào này có thể cháy mãi? Vì vậy, việc im lặng lúc này từ phe Đoàn Đệ
+            chỉ khiến sự tín nhiệm từ nhân dân với Đoàn Đệ trường càng ngày càng giảm sút.
           </p>
-          <p
-            class="pt-1 text-gray-700 px-4 indent-4 sm:indent-6 italic lg:text-lg"
-          >
+          <p class="italic mt-3 indent-4 text-gray-600 dark:text-white/50 sm:font-semibold lg:text-lg">
             "Liệu rằng phong trào này có thành công không? Chúng ta chỉ có thể
             chờ đợi, vững tin từng ngày và từng giờ vào một chiến thắng, một
             cộng đồng nơi không còn áp bức tại ngôi trường LTV..."
           </p>
-        </div>
-        <div class="flex justify-end mt-4">
-          <a
-            href="#"
-            class="text-base sm:text-xl lg:text-2xl font-semibold text-blue-700 pr-2 pb-1"
-          >
-            Ét O Ét - 2/3/2022
-          </a>
+          <div class="flex justify-end items-start mt-2">
+            <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-lg text-md px-3 py-2 text-center inline-flex items-center justify-end"
+              href="../index.html">
+              Trang chủ
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <aside aria-label="Related articles" class="py-3 bg-gray-50 dark:bg-gray-800">
+      <div class="px-4 mx-auto max-w-screen-xl">
+        <h2 class="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Bài viết cùng chủ đề</h2>
+        <div class="grid gap-12 grid-cols-1 place-items-center mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <article class="max-w-xs cursor-pointer">
+            <a href="./GCDV-1.html">
+              <img src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/team-3-800x800.jpg"
+                class="mb-4 rounded h-40 w-full border-none object-cover" alt="...">
+            </a>
+            <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white line-clamp-1">
+              <a href="#">Đoàn trường và 1001 cách xử lý khi có drama</a>
+            </h2>
+            <p class="mb-4 text-gray-500 dark:text-white/50 line-clamp-2">
+              Sự việc xảy ra vào tối ngày 1/3/2022, chúng mình mong nhận được
+              câu trả lời từ phía đại diện Đoàn trường...
+            </p>
+            <div class="inline-flex justify-start items-center">
+              <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-md text-base px-2.5 py-1.5 text-center inline-flex items-center justify-end"
+                href="./1001.html">
+                Hít tiếp
+              </a>
+            </div>
+          </article>
+          <article class="max-w-xs cursor-pointer">
+            <a href="./GCDV-1.html">
+              <img src="https://source.unsplash.com/random/800x800/?city-lights"
+                class="mb-4 rounded h-40 w-full border-none object-cover" alt="...">
+            </a>
+            <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white line-clamp-1">
+              <a href="#">Giải cứu Diễm Vương (P1)</a>
+            </h2>
+            <p class="mb-4 text-gray-500 dark:text-white/50 line-clamp-2">
+              Vào những ngày đầu sau khi đi học lại, Đoàn trường tiến hành công tác kiểm tra.
+              Họ càn quét khắp nơi trong trường, soi từng mọi ngóc ngách trong lớp...</p>
+            <div class="inline-flex justify-start items-center">
+              <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-md text-base px-2.5 py-1.5 text-center inline-flex items-center justify-end"
+                href="./GCDV-1.html">
+                Hít tiếp
+              </a>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </body>
+    </aside>
+  </div>
+
+  <script>
+    let spinner = document.getElementById('spinner');
+    let content = document.getElementById('content');
+    setTimeout(() => {
+      spinner.classList.add('hidden')
+      content.classList.remove('hidden')
+    }, 2500);
+  </script>
+</body>
+
 </html>

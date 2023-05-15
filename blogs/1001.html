@@ -1,93 +1,176 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đoàn trường và 1001 cách xử lý khi có drama</title>
-    <shortcut icon="#" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-slate-50">
-    <div class="flex max-w-3xl mx-auto items-center mb-16 sm:mb-4 pt-5">
-      <!-- default is mb-4 -->
-      <div
-        class="bg-white max-w-full items-center border border-gray-200 shadow-md rounded-lg pt-3"
-      >
-        <div class="py-1">
-          <h2 class="text-black text-2xl sm:text-4xl font-semibold text-center mb-3">
-            Đoàn trường và 1001 cách xử lý khi có drama
-          </h2>
-          <p class="mt-2 text-gray-700 px-4 indent-6 sm:indent-8 italic font-normal text-base lg:text-lg">
-            Sự việc xảy ra vào tối ngày 1/3/2022, chúng mình mong nhận được câu
-            trả lời từ phía đại diện Đoàn Trường thay vì cứ im lặng cho qua
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đoàn trường và 1001 cách xử lý khi có drama</title>
+  <shortcut icon="#" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="../assets/global.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-slate-50 dark:bg-gray-900">
+
+  <div id="spinner"
+    class="absolute z-10 flex items-center justify-center w-full min-h-screen m-auto overflow-hidden bg-opacity-25 bg-tranparent">
+    <div id="loader" class="relative grid grid-cols-3 gap-0.5 w-24 h-24">
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+      <div id="subloader" class="relative w-full h-full bg-blue-600/80"></div>
+    </div>
+  </div>
+
+  <div id="content" class="hidden">
+    <main class="pt-4 pb-12 bg-white dark:bg-gray-900">
+      <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
+        <article
+          class="mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+          <header class="mb-4 lg:mb-6 not-format">
+            <h1
+              class="mb-3 text-xl md:text-2xl font-bold leading-tight text-gray-900 lg:mb-6 lg:text-3xl dark:text-white">
+              Đoàn trường và 1001 cách xử lý khi có drama
+            </h1>
+            <address class="flex items-center mb-6 not-italic">
+              <div class="flex items-center flex-row w-full gap-x-4 max-w-lg">
+                <a href="#" rel="author" class="text-md font-semibold text-gray-900 dark:text-white">
+                  <span class="text-gray-600 dark:text-white/50">Tác giả: </span>
+                  Mỏi Mệt
+                </a>
+                <p class="text-base font-base text-gray-500 dark:text-gray-400">
+                  2/3/2022
+                </p>
+              </div>
+            </address>
+          </header>
+          <p class="lead italic mt-2 indent-4 text-gray-500 dark:text-gray-200/70">
+            "Sự việc xảy ra vào tối ngày 1/3/2022, chúng mình mong nhận được câu
+            trả lời từ phía đại diện Đoàn trường thay vì cứ im lặng cho qua
             chuyện. Chúng mình bất bình, chúng mình có quyền lên tiếng.
-            <br />
+            <!-- <br /> -->
             Và tất nhiên chúng mình ở đây không phải là cá nhân mà là một tập
-            thể rất nhiều người.
+            thể rất nhiều người."
           </p>
-          <p class="pt-10 text-black px-4 indent-4 sm:indent-6 lg:text-lg">
-            Trước giờ, bao nhiêu lần chúng mình phản ánh trên Form của Thay Lời
-            Muốn Nói mà có liên quan đến Đoàn Trường thì đều không được phê
+          <p class="lead mt-4 indent-4 text-gray-900 dark:text-white">
+            Trước giờ, bao nhiêu lần chúng mình phản ánh trên form/cfs của "LTV - Thay lời
+            muốn nói" mà có liên quan đến Đoàn trường thì đều không được phê
             duyệt, thậm chí có cho bài đăng lên rồi một lúc sau xoá đi. Nhưng
-            với sự việc lần này, mình xin chân thành cảm ơn Các bạn Admin của
-            Page, cảm ơn các bạn đã cho bài lên, cảm ơn các bạn đã dũng cảm! Có
+            với sự việc lần này, mình xin chân thành cảm ơn Các bạn admin của
+            page, cảm ơn các bạn đã cho bài lên, cảm ơn các bạn đã dũng cảm! Có
             những thắc mắc như tại sao chúng mình lại nói chung chung trong khi
-            có rất nhiều người trong đoàn nhưng họ vẫn cư xử đúng đắn, mình cũng
+            có rất nhiều người trong Đoàn nhưng họ vẫn cư xử đúng đắn, mình cũng
             xin nói luôn:
-            <br/> 
-            <span class="italic">"Việc mà các bạn bình luận nói chung là Đoàn như vậy
-              thứ nhất chứng tỏ là phải gặp rất nhiều người như vậy và đa số đều
-              như vậy."</span>
           </p>
-          <p class="pt-6 text-black px-4 indent-4 sm:indent-6 lg:text-lg">
+          <p class="lead mt-2 indent-8 text-gray-900 dark:text-white">
+            Việc mà các bạn bình luận nói chung là Đoàn như vậy thứ nhất chứng tỏ là
+            phải gặp rất nhiều người như vậy và đa số đều như vậy.
+          </p>
+          <p class="lead mt-2 indent-8 text-gray-900 dark:text-white">
             Thứ hai, việc điểm mặt những ai đã có thái độ và hành động
             thiếu tôn trọng chúng mình hoàn toàn có thể chỉ ra được, thậm chí
             nhiều người còn biết đích danh là ai. Thì tạo cơ hội để chúng mình
             làm việc đó đi? Chúng mình sẵn sàng! Vì thế cho nên, chúng mình cần
             câu trả lời thích đáng cho sự việc lần này.
-            <br/>
-            <br/>
-            <span class="italic font-medium sm:font-semibold lg:text-lg">
-              "HÃY ĐỐI MẶT VỚI SỰ VIỆC VÀ LÊN TIẾNG ĐI, ĐỪNG TRỐN TRÁNH CHỈ LÀM
-              CHO MỌI VIỆC TỒI TỆ HƠN THÔI. HÃY HÀNH ĐỘNG SAO CHO XỨNG VỚI CHỨC
-              DANH CỦA MÌNH."
-            </span>
           </p>
-          <br/>
-          <br/>
-
-          <p class="pt-2 sm:pt-4 text-black px-4 indent-4 sm:indent-6 lg:text-lg">
+          <p class="italic mt-3 indent-4 font-medium text-gray-900 dark:text-white sm:font-semibold lg:text-lg">
+            "HÃY ĐỐI MẶT VỚI SỰ VIỆC VÀ LÊN TIẾNG ĐI, ĐỪNG TRỐN TRÁNH CHỈ LÀM
+            CHO MỌI VIỆC TỒI TỆ HƠN THÔI. HÃY HÀNH ĐỘNG SAO CHO XỨNG VỚI CHỨC
+            DANH CỦA MÌNH."
+          </p>
+          <p class="lead mt-2 indent-4 text-gray-900 dark:text-white">
             Nếu các bạn có tư tưởng ém bài, che giấu bài, trốn tránh và âm thầm
             báo cáo, xoá bình luận thì đừng lo vì sự việc đã được rất nhiều
             người chứng kiến. Thử hỏi sẽ có bao nhiêu người
-            <span class="italic font-normal sm:font-medium lg:text-lg">CAP MÀN HÌNH</span> lại? Nên im
-            lặng chỉ khiến cho mọi người thấy sự
-            <span class="italic">"TÍN NHIỆM"</span> của Đoàn đến mức nào mà
-            thôi. (Mình đã tổng hợp lên trên file, một khi bài post bị xoá hay
-            một cmt nào bị mất đi thì mình vẫn còn giữ)
-            <br/>
-            <br/>
-            <span class="italic">Link các bức ảnh cap màn hình được lưu trữ 
-              <a  class= "text-blue-700 hover:text-blue-800" href="../404.html">tại đây</ah></span>
-            <br/>
-            <span class="font-medium sm:font-semibold text-base sm:text-xl text-indigo-700 lg:text-lg">#MakeMỏiMệtGreatAgain</span>
+            <span class="font-normal sm:font-medium lg:text-lg uppercase">cap màn hình</span> lại? Nên im
+            lặng chỉ khiến cho mọi người thấy sự tín nhiệm của Đoàn đến mức nào mà
+            thôi.
           </p>
-        </div>
-        <div class="flex justify-end mt-4">
-          <a href="#" class="text-base sm:text-xl lg:text-2xl font-semibold text-blue-700 pr-2 pb-1">
-            Mỏi Mệt - 2/3/2022
-          </a>
+          <p class="lead mt-2 indent-4 text-gray-600 dark:text-white/50">
+            (Mình đã tổng hợp lên trên file, một khi bài post bị xoá hay một cmt nào bị mất đi thì mình vẫn còn giữ)
+          </p>
+          <p class="lead my-6 md:my-0 md:mt-6 w-2/3 text-gray-600 dark:text-white/50">
+            <a href="../404.html">Link các bức ảnh màn hình được lưu trữ
+              <span class="italic hover:underline text-blue-700 hover:text-blue-800">tại đây</span>
+            </a>
+          </p>
+          <span class="font-medium sm:font-semibold text-base sm:text-xl text-indigo-700 lg:text-lg">
+            #MakeMỏiMệtGreatAgain
+          </span>
+          <div class="flex justify-end items-start -mt-16 md:-mt-10">
+            <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-lg text-md px-3 py-2 text-center inline-flex items-center justify-end"
+              href="../index.html">
+              Trang chủ
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <aside aria-label="Related articles" class="py-3 bg-gray-50 dark:bg-gray-800">
+      <div class="px-4 mx-auto max-w-screen-xl">
+        <h2 class="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Bài viết cùng chủ đề</h2>
+        <div class="grid gap-12 grid-cols-1 place-items-center mx-auto sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <article class="max-w-xs cursor-pointer">
+            <a href="./GCDV-1.html">
+              <img src="https://source.unsplash.com/random/800x800/?city-lights"
+                class="mb-4 rounded h-40 w-full border-none object-cover" alt="...">
+            </a>
+            <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white line-clamp-1">
+              <a href="#">Giải cứu Diễm Vương (P1)</a>
+            </h2>
+            <p class="mb-4 text-gray-500 dark:text-white/50 line-clamp-2">
+              Vào những ngày đầu sau khi đi học lại, Đoàn trường tiến hành công tác kiểm tra.
+              Họ càn quét khắp nơi trong trường, soi từng mọi ngóc ngách trong lớp...</p>
+            <div class="inline-flex justify-start items-center">
+              <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-md text-base px-2.5 py-1.5 text-center inline-flex items-center justify-end"
+                href="./GCDV-1.html">
+                Hít tiếp
+              </a>
+            </div>
+          </article>
+          <article class="max-w-xs cursor-pointer">
+            <a href="./GCDV-2.html">
+              <img src="https://source.unsplash.com/random/800x800/?neon-city"
+                class="mb-4 rounded h-40 w-full border-none object-cover" alt="...">
+            </a>
+            <h2 class="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white line-clamp-1">
+              <a href="#">Giải cứu Diễm Vương (P2)</a>
+            </h2>
+            <p class="mb-4 font-light text-gray-500 dark:text-gray-400 line-clamp-2">
+              Ngày 2/3/2022, tướng lĩnh Mỏi Mệt đã quay trở lại chiến tuyến, bày tỏ mong muốn nhận được câu trả lời
+              từ phía Đoàn Đệ thay cho sự im lặng cho xong chuyện...
+            </p>
+            <div class="inline-flex justify-start items-center">
+              <a class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 outline-none dark:focus-blue-500 font-medium rounded-md text-base px-2.5 py-1.5 text-center inline-flex items-center justify-end"
+                href="./GCDV-2.html">
+                Hít tiếp
+              </a>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </body>
+    </aside>
+  </div>
+
+  <script>
+    let spinner = document.getElementById('spinner');
+    let content = document.getElementById('content');
+    setTimeout(() => {
+      spinner.classList.add('hidden')
+      content.classList.remove('hidden')
+    }, 2500);
+  </script>
+
+</body>
+
 </html>
