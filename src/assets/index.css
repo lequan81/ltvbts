@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+}
+
+.tox-editor-container > div * {
+  background-color: rgb(249 250 251) !important;
+  box-shadow: none;
+}
+
+.tox-menu,
+.tox-menu.tox-collection.tox-collection--list.tox-selected-menu,
+.tox-selected-menu,
+.tox-collection--list,
+.tox-collection__item {
+  background-color: rgb(229 231 235) !important;
+}
+
+.tox-menu.tox-collection.tox-collection--list.tox-selected-menu > *,
+.tox-collection__item {
+  color: rgb(17 24 39) !important;
+}
+
+.tox .tox-edit-area__iframe {
+  background-color: rgb(229 231 235) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tox .tox-edit-area__iframe {
+    background-color: rgb(31 41 55) !important;
+  }
+  .tox-tinymce {
+    border-radius: 0.25rem !important;
+    border: 2px solid rgb(31 41 55) !important;
+  }
+
+  .tox .tox-dialog,
+  .tox .tox-dialog__header,
+  .tox .tox-dialog__footer {
+    background-color: rgb(31 41 55) !important;
+    border-color: rgb(31 41 55) !important;
+    color: #fff !important;
+  }
+
+  .tox .tox-label,
+  .tox .tox-toolbar-label,
+  .tox-icon {
+    color: #fff !important;
+  }
+
+  .tox-form__group > input,
+  .tox-control-wrap > input,
+  .tox-listboxfield > button {
+    background-color: rgb(229 231 235) !important;
+  }
+}
+
+.tox-collection__item--active {
+  background-color: rgb(147 197 253) !important;
+}
+
+.tox-collection__item--enabled {
+  background-color: #fff !important;
+}
+
+.tox-tbtn:hover,
+.tox-tbtn:hover svg,
+.tox .tox-tbtn--bespoke:hover > * {
+  background-color: rgb(229 231 235) !important;
+}
+
+.tox-tbtn.tox-tbtn--enabled,
+.tox .tox-tbtn--enabled svg,
+.tox .tox-tbtn--enabled:hover svg {
+  background: rgb(209 213 219) !important;
+}
+
+.tox-collection__item-label > * {
+  background-color: transparent !important;
+  color: rgb(17 24 39) !important;
+}
+
+.tox.tox-tinymce * {
+  font-family: "Be Vietnam Pro", sans-serif !important;
+  font-size: 1rem !important;
+  /* border-radius: 0.25rem !important; */
+  /* background-color: rgb(229 231 235) !important; */
+}
+
+.mce-content-body > ol,
+.post-body > ol,
+.mce-content-body > ul > ol,
+.post-body > ul > ol {
+  @apply list-decimal ml-2;
+}
+
+.mce-content-body > ul,
+.post-body > ul,
+.mce-content-body > ol > ul,
+.post-body > ol > ul {
+  @apply list-disc ml-2;
+}
+.tox-notification {
+  display: none !important;
+}
+
+#loader > div {
+  transform: scale(0);
+  transform-origin: center center;
+  animation: loader 2s infinite linear;
+}
+
+#loader > div:nth-of-type(1),
+#loader > div:nth-of-type(5),
+#loader > div:nth-of-type(9) {
+  animation-delay: 0.4s;
+}
+
+#loader > div:nth-of-type(4),
+#loader > div:nth-of-type(8) {
+  animation-delay: 0.2s;
+}
+
+#loader > div:nth-of-type(2),
+#loader > div:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+
+#loader > div:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
