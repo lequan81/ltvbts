@@ -12,7 +12,7 @@ const Heading = () => {
       </div>
       <div className="flex-0 flex h-full xl:w-44 md:w-40 w-12 sm:w-20 items-center justify-end mr-4">
         <Link to="/create"
-          className="inline-flex items-center sm:px-3 sm:py-2 p-2 font-medium text-md text-center text-white bg-green-700 rounded-md hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+          className="inline-flex items-center sm:px-3 sm:py-2 p-2 font-medium text-sm text-center text-white bg-green-700 rounded-md hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
             stroke="currentColor" className="w-6 h-6 inline mr-0 md:mr-2 lg:md-2 text-white">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
